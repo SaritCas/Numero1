@@ -1,0 +1,53 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+/*Inicia header*/
+
+body{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condens   ed", Helvetica, Arial, "sans-serif";
+}
+/*#logo{
+   margin: 0px;
+	padding: 0px; 
+padding-left: 20px;
+}*/
+header{
+	color: white;
+	margin: 0px;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	background-color: #228967;
+    height: 50px;/*100*/
+    opacity:0.8;
+}
+header ul{
+	margin-left: 10%;
+}
+
+
+#header li, li a{
+	text-align: center;
+	float: left;
+	list-style: none;
+	color:whitesmoke;
+}
+
+#header li a{
+	padding:10px;/*50*/
+	width:150px;
+}
+
+#header a:hover{
+	background-color: #009966;
+}
+
+/*Termina header*/
+
+/*Inicia contenido*/
+#contenido{
+    padding-top: 50px;
+}
+/*Termina contenido*/

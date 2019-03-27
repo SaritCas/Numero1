@@ -1,0 +1,173 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+/*Inicia header*/
+
+body{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condens   ed", Helvetica, Arial, "sans-serif";
+}
+/*#logo{
+   margin: 0px;
+	padding: 0px; 
+padding-left: 20px;
+}*/
+header{
+	color: white;
+	margin: 0px;
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	background-color: #228967;
+    height: 50px;/*100*/
+    opacity:0.8;
+}
+header ul{
+	margin-left: 10%;
+}
+
+
+#header li, li a{
+	text-align: center;
+	float: left;
+	list-style: none;
+	color:whitesmoke;
+}
+
+#header li a{
+	padding:10px;/*50*/
+	width:150px;
+}
+
+#header a:hover{
+	background-color: #009966;
+}
+
+/*Termina header*/
+
+
+
+
+/*Inicia seccion1*/
+#menu a{
+	text-decoration:none;
+}
+
+#seccion1{
+	background-image: url("ElefanteHD.jpg");
+	height: 655px;
+}
+
+#seccion1 #indice{
+	float: right;
+	margin-top: 10%;
+	margin-right: 0%;
+    border-radius: 15px;
+}
+
+/*Termina seccion1*/
+
+
+/*Inica indice*/
+
+#indice{
+	list-style:none;
+	 border-radius: 15px;
+}
+#indice a{
+    
+	color: whitesmoke;
+	text-decoration: none;
+	display: block;
+	background-color: #1E785A;
+	width: 50%;
+	padding: 15%;/*25*/
+	text-align: center;
+   /* border-radius: 15px;*/
+    opacity: 0.6;   
+}
+
+#indice a:hover{
+	background-color: #009966;
+    border-radius: 15px;
+}
+/*Termina indice*/
+
+/*Inicia aeccion 1*/
+#seccion1 > p{
+	font-size: 30px;
+	color: white;
+	position: absolute;
+	border: 2px solid white;
+	border-radius: 15px;
+	margin-top: 590px;/*590*/
+	margin-left: 500px;/*500*/
+	/*background-color:#666;*/
+}
+/*Termina seccion1*/
+
+/*Inica clic*/
+#clic{
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+}
+/*Termina clic*/
+
+/*Inicia article*/
+article{
+	background-image: url("elefantback.jpg");
+	height: 1200px;
+	margin-top:50px;
+}
+/*Termina Article*/
+
+/*Inicia Generos*/
+#generos{
+    background-color: #171616;
+	opacity: 0.6; 
+	color: white;
+	width: 1200px;
+	border-radius: 50px;
+	padding-left: 50px;
+}
+
+/*Termina Generos*/
+
+/*Inicio carac*/
+#Caracteristicas{
+	background-color: #171616;
+	opacity: 0.6;
+	color: white;
+	width: 1200px;
+	border-radius: 50px;
+	padding-left: 50px;
+}
+#Caracteristicas li a{
+	
+	
+}
+/*Termina carac*/
+
+/*Inicia Mitos*/
+#Mitos{
+	background-color: #171616;
+	opacity: 0.6; 
+	color: white;
+	width: 1200px;
+	border-radius: 50px;
+	padding-left: 50px;
+}
+/*Termina Mitos*/
+
+/*Inicia Taxo*/
+#Taxonomia{
+	background-color: #171616;
+	opacity: 0.6; 
+	color: white;
+	width: 1200px;
+	border-radius: 50px;
+	padding-left: 50px;
+}
+/*Termina Taxo*/
