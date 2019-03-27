@@ -19,9 +19,16 @@ header{
 	width: 100%;
 	text-align: center;
 	position: fixed;
-	background-color: #228967;
+	background-color: #228967;/*#228967*/
     height: 50px;/*100*/
     opacity:0.8;
+
+}
+header img{
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin-left: 70px;
 }
 header ul{
 	margin-left: 10%;
@@ -117,8 +124,8 @@ header ul{
 
 /*Inicia article*/
 article{
-	background-image: url("elefantback.jpg");
-	height: 1200px;
+	background-image: url("elefantback11.jpg");
+	height: 1250px;
 	margin-top:50px;
 }
 /*Termina Article*/
@@ -144,10 +151,7 @@ article{
 	border-radius: 50px;
 	padding-left: 50px;
 }
-#Caracteristicas li a{
-	
-	
-}
+
 /*Termina carac*/
 
 /*Inicia Mitos*/
