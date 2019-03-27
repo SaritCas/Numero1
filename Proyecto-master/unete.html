@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	*{padding: 0px;
+	margin: 1px;
+	}</style>
+	<title>unete</title>
+	<link rel="stylesheet" type="text/css" href="unirse.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+			$('#boton-ok').click(function(){
+					/*Captura de datos escrito en los inputs */
+					var nom = document.getElementById("nombretxt").value;
+					var cor = document.getElementById("correotxt").value;
+					var edad = document.getElementById("edadtxt").value;
+					var ape = document.getElementById("apellidostxt").value;
+					/*Guardando los datos en el LocalStorage*/
+					localStorage.setItem("Nombre", nom);
+					localStorage.setItem("Apellidos", ape);
+					localStorage.setItem("Edad", edad);
+					localStorage.setItem("Correo", cor);
+
+
+					
+
+			        document.location.target = "_blank";/*Va a pagina principal*/
+			        document.location.href="../proyecto/Elefante.html";
+
+			        alert("Gracias "+ nom); /*Agradece con un cuadro*/
+			});
+	});
+
+	</script>
+</head>
+<body>
+<header id="header">
+    <img src="logo.jpeg">
+        <h3 padding-top:50px;><a href="#"></a>ELEFANTE</h3>
+	  	<ul id="menu" align="center">
+			<li><a href="../proyecto/Elefante.html" tabindex="1" title="pagina principal" accesskey="1" target="_self">Inicio</a></li>
+			<li>|</li>
+			<li><a href="../proyecto/Habitats.html" tabindex="1" title="Ver habitats" accesskey="1" target="new">Habitats</a></li>
+			<li>|</li>
+			<li><a href="../proyecto/Alimentacion.html" tabindex="1" title="Ver alimentacion" accesskey="1" target="new">Alimentacion</a></li>
+			<li>|</li>
+			<li><a href="../proyecto/Dondevisitarlos.html" tabindex="1" title="Ver donde visitarlos" accesskey="1" target="new">Donde visitarlos</a></li>
+      <li>|</li>
+      <li><a href="../proyecto/Referencias.html" tabindex="1" title="Ver referencias" accesskey="1" target="new">Referencias</a></li>
+      <li>|</li>
+      <li><a href="../proyecto/unete.html" tabindex="1" title="Ver referencias" accesskey="1" target="new">Únete</a></li>
+	  	</ul>
+	</header>
+
+	<div id="contenido">
+		<section> 
+			<div id="p">
+				<h1 align="center" color="white"> Para obtener mas contenido, unete a nosotros, asi podras ver toda informacion sobre los elefantes</h1>
+			</div>
+			<div id="fromulario"> 
+				<form  action="" method="get" id="formulario1" > 
+					<p>
+						Nombre: <input type="text" id="nombretxt" autofocus required />
+					</p>
+
+					<p> 
+						Apellidos: <input type="text" id="apellidostxt" autofocus required />
+					</p>
+					<p>
+						Edad <input type="int" id="edadtxt" autofocus required/>
+					</p>
+					<p> 
+						Correo electronico: <input type="email" id="correotxt"  required/>
+					</p>
+					<p>
+						<input type="submit" value="Ok" id="boton-ok"/>
+					</p>
+				</form>
+			</div>
+		</section>
+			
+
+		</div>
+</body>
+</html>
