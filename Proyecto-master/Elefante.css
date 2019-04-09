@@ -53,9 +53,6 @@ header ul{
 
 /*Termina header*/
 
-
-
-
 /*Inicia seccion1*/
 #menu a{
 	text-decoration:none;
@@ -175,3 +172,19 @@ article{
 	padding-left: 50px;
 }
 /*Termina Taxo*/
+
+/*Iniciaboton arriba*/
+
+.ir-arriba{
+	display:none;/*para que este en un inicio y no se muestre la img*/
+	padding: 20px;/*20px*/
+	padding-top:90px;
+	background: #024959;
+	font-size: 20px;
+	color:#fff;
+	cursor: pointer;
+	position: fixed;
+	buttom:20px;
+	right: 20px;
+}
+/*Termina boton arriba*/

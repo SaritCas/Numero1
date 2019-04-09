@@ -8,11 +8,6 @@
 body{
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condens   ed", Helvetica, Arial, "sans-serif";
 }
-/*#logo{
-   margin: 0px;
-	padding: 0px; 
-padding-left: 20px;
-}*/
 header{
 	color: white;
 	margin: 0px;
@@ -57,3 +52,19 @@ header ul{
     padding-top: 50px;
 }
 /*Termina contenido*/
+
+/*Iniciaboton arriba*/
+
+.ir-arriba{
+	display:none;/*para que este en un inicio y no se muestre la img*/
+	padding: 20px;/*20px*/
+	padding-top:90px;
+	background: #024959;
+	font-size: 20px;
+	color:#fff;
+	cursor: pointer;
+	position: fixed;
+	buttom:20px;
+	right: 20px;
+}
+/*Termina boton arriba*/
