@@ -1,0 +1,22 @@
+html, body{
+  height: 100%;
+}
+
+img{
+  max-width: 100%;
+}
+
+/*cover*/
+ #cover{
+  background: #222 url(Fondo1.jpg) center center no-repeat;
+  background-size: cover;
+  color: white;
+  height: 800px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+#cover-texto{
+  width: 100%;
+}
