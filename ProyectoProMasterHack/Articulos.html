@@ -10,20 +10,33 @@
         display: table;
         width: 100%;
         text-align: center;
-        background: black url("Img/Elefante4.jpg") no-repeat fixed;
+        background: #FBFCFC url("Img/Elefante4.jpg") no-repeat fixed;
         background-size: 100% 95%;
+        /*color: ; /* usar esta propiedad si es necesario*/
         /*opacity: 0.5;*/
+      }
+      #miTitulo hr{
+        margin: 0 auto;
+        /*color: ; /* usar esta propiedad si es necesario*/
+      }
+      #otraSeccion li{ /*Mover la lista*/
+        background-color: #17202A;
+        display: block;
+        padding: 5%;
+        font-size: 30px;
+        color: white;
       }
     </style>
   </head>
 
   <body>
-    <h1 id="banner">Este es el banner</h1>
+    <h1 id="banner">EspacioBanner</h1>
 
     <div id="contenido">
 
       <nav id="miTitulo">
-        <h1>TITULO DEL CONTENIDO</h1><br>
+        <h1>TITULO DEL CONTENIDO</h1>
+        <hr width="50%">
         <h3>Subtitulo</h3>
       </nav>
 
@@ -32,6 +45,15 @@
 
           <h1 align="center">Titulo del article</h1>
           <h2 align="center">sub</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <img src="Img/Elefante4.jpg" alt="..." width="50%">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -52,12 +74,68 @@
         </section>
         <nav id="otraSeccion">
           <h1>MAS SITIOS INTERESANTES</h1>
-          <p>Holas</p>
+          <ul>
+            <a href="#"><li>Taxonomia</li></a>
+            <a href="#"><li>Hola</li></a>
+            <a href="#"><li>Hola</li></a>
+          </ul>
         </nav>
       </article>
     </div>
 
-    <footer>Footer</footer>
+    <footer>
+
+      <div class="container-footer-all">
+        <div class="container-body">
+          <div class="colum1">
+            <h1>Más informacion de la compañia</h1>
+            <p>Esta compañia se dedica al cuidado
+              del medio ambiente, solo nos importa cuidar
+              que no se contamine bla bla bla lorem lorem
+              sadasiofhdsoa  sadasiofhdsoalf´pdkskdsa
+              sadk´pfd´skfs´fkádsk dkfa´j dsfjspajfdfd j
+              sdaopfdjpfdsj.
+            </p>
+          </div>
+          <div class="colum2">
+            <h1>Redes sociales</h1>
+            <a href="#"><div class="row">
+              <img src="Img/Elefante4.jpg" alt="...">Siguenos en facebook
+            </div></a>
+            <a href="#"><div class="row">
+              <img src="Img/Elefante4.jpg" alt="...">Siguenos en facebook
+            </div></a>
+          </div>
+          <div class="colum3">
+            <h1>Contactanos</h1>
+            <div class="row">
+              <img src="" alt="...">
+              <p>Calle 1, col la roma mexico Mexico casa #27</p>
+            </div>
+            <div class="row">
+              <img src="" alt="...">
+              <p>+55-246-187-5446</p>
+            </div>
+            <div class="row">
+              <img src="" alt="...">
+              <p>correofalso@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-footer">
+          <div class="copyright">
+            ©2019 Todos los Derechos Reservados | <a href="#">NombreDeLaPagina</a>
+          </div>
+          <div class="information">
+            <a href="#">Inicio</a>|
+            <a href="#">Inicio</a>|
+            <a href="#">Inicio</a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
 
   </body>
 </html>

@@ -6,12 +6,12 @@
 }
 
 body{
-  background-color: white;
+  background-color: #FAFAFA;
   font-family: sans-serif;
 }
 
 #banner{
-  background-color: blue;
+  background-color: #4CAF50;
   width: 100%;
   text-align: center;
   position: fixed;
@@ -22,11 +22,11 @@ body{
 }
 
 #miTitulo h1{
-    margin-top: 20%;
+  margin-top: 20%;
 }
 
 #miArticulo{
-  background-color: white;
+  background-color: #FAFAFA; /*#FBFCFC*/
   width: 90%;
   margin: 0 auto;
   display: flex;
@@ -34,11 +34,9 @@ body{
 
 #miArticulo section{
   box-sizing: border-box; /*Se mueve adentro del contenedor padding*/
-  background-color: pink;
+  background-color: #FAFAFA;
   width: 80%;
   padding: 2%;
-  float: left;
-  height: var(--altura-yellow);
 }
 
 p{
@@ -47,8 +45,90 @@ p{
 
 #otraSeccion{
   text-align: center;
-  background-color: yellow;
+  background-color: #2C3E50;
+  color: white;
   width: 20%;
 }
-/*
-  margin: 0 auto;*/
+/*margin: 0 auto;*/
+
+#otraSeccion ul{
+  list-style: none;
+}
+
+#otraSeccion li{
+  background-color: #17202A;
+  display: block;
+  padding: 5%;
+  font-size: 30px;
+  color: white;
+}
+
+#otraSeccion a{
+  text-decoration: none;
+}
+
+#otraSeccion li:hover{
+  background-color: #5DADE2;
+  color: black;
+}
+
+/*footer*/
+
+footer{
+  width: 100%;
+  background: #202020;
+  color: white;
+  box-sizing: border-box;
+}
+
+.container-footer-all{
+  width: 1000%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container-body{
+  display: flex;
+}
+
+.colum1{
+  max-width: 400px;
+}
+
+.colum1 h1{
+  font-size: 22px;
+}
+
+.colum1 p{
+  font-size: 14px;
+  color: #c7c7c7;
+  margin-top: 20px;
+}
+
+.colum2{
+  margin-left: 1%;
+  max-width: 400px;
+}
+
+.colum2 h1{
+  font-size: 22px;
+}
+
+.row{
+  margin-top: 20px;
+  display: flex;
+}
+
+.colum2 img{
+  width: 36px;
+  height: 36px;
+  margin-right: 2%;
+}
+
+.colum2 p{
+  margin-top: 2%;
+  color: #c7c7c7;
+}
+.colum2 a{
+  color: #c7c7c7;/*Min 26:39*/
+}
