@@ -1,0 +1,54 @@
+/*CSS PARA LOS ARTICULOS*/
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  background-color: white;
+  font-family: sans-serif;
+}
+
+#banner{
+  background-color: blue;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+}
+
+#miTitulo{
+  color: white;
+}
+
+#miTitulo h1{
+    margin-top: 20%;
+}
+
+#miArticulo{
+  background-color: white;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+}
+
+#miArticulo section{
+  box-sizing: border-box; /*Se mueve adentro del contenedor padding*/
+  background-color: pink;
+  width: 80%;
+  padding: 2%;
+  float: left;
+  height: var(--altura-yellow);
+}
+
+p{
+  text-align: justify;
+}
+
+#otraSeccion{
+  text-align: center;
+  background-color: yellow;
+  width: 20%;
+}
+/*
+  margin: 0 auto;*/
