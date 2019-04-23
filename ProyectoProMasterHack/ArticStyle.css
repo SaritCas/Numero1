@@ -19,10 +19,21 @@ body{
 
 #miTitulo{
   color: white;
+    height: 600px;
+    display: table;
+    width: 100%;
+    text-align: center;
 }
 
 #miTitulo h1{
   margin-top: 20%;
+}
+
+.apArt{
+  margin-top: 1.2%;
+  margin-left: 5%;
+  font-size: 25px;
+  color: #4D5656;
 }
 
 #miArticulo{
@@ -36,10 +47,10 @@ body{
   box-sizing: border-box; /*Se mueve adentro del contenedor padding*/
   background-color: #FAFAFA;
   width: 80%;
-  padding: 2%;
+  padding: 5%;
 }
 
-p{
+#miArticulo p{
   text-align: justify;
 }
 
@@ -70,6 +81,76 @@ p{
 #otraSeccion li:hover{
   background-color: #5DADE2;
   color: black;
+}
+
+.lista1{
+  margin-left: 5%;
+  margin-bottom: 2%;
+  color: #A93226;
+}
+
+#miArticulo section h1{
+  color: #2980B9;
+  font-size: 28px;
+}
+
+.postedd{
+  font-weight: bold;
+  border-color: #A93226;
+}
+
+#miArticulo section img{
+  margin-top: 2%;
+}
+
+#miArticulo section hr{
+  display: block;
+  height: 1px;
+  width: 25%;
+  border: 0;
+  border-top: 1px solid #A93226;
+  margin: 1em 0;
+  padding: 0;
+}
+
+#miArticulo section h2{
+  color: #4D5656;
+}
+
+#miArticulo section h3{
+  color: #1A5276;
+}
+
+#miArticulo section p{
+  margin-top: 2%;
+}
+
+/*Responsive*/
+
+@media screen and (max-width: 900px){
+  #miArticulo{
+    display: block;
+  }
+
+  #miArticulo section{
+    width: 100%;
+  }
+
+  #otraSeccion{
+    margin: auto;
+    width: 100%;
+  }
+
+  #miTitulo h1{
+    margin-top: 35%;
+  }
+
+}
+
+@media screen and (max-width: 500px){
+  #miArticulo section hr{
+    width: 60%;
+  }
 }
 
 /*footer*/

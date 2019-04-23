@@ -6,10 +6,6 @@
     <link rel="stylesheet" href="ArticStyle.css">
     <style>
       #miTitulo{
-        height: 600px;
-        display: table;
-        width: 100%;
-        text-align: center;
         background: #FBFCFC url("Img/Elefante4.jpg") no-repeat fixed;
         background-size: 100% 95%;
         /*color: ; /* usar esta propiedad si es necesario*/
@@ -26,6 +22,14 @@
         font-size: 30px;
         color: white;
       }
+      @media screen and (max-width: 500px){
+        #miTitulo{
+          height: 400px;
+          background-size: 100% 70%;
+        }
+
+
+      }
     </style>
   </head>
 
@@ -39,12 +43,14 @@
         <hr width="50%">
         <h3>Subtitulo</h3>
       </nav>
-
+      <h1 class="apArt">Articulo:</h1>
       <article id="miArticulo">
         <section>
 
           <h1 align="center">Titulo del article</h1>
-          <h2 align="center">sub</h2>
+          <h2 align="center">subtitulo chido</h2>
+          <p>Posted on: <em class="postedd">28 Marzo, 2019</em> </p>
+          <hr>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -61,7 +67,12 @@
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+          </p><br>
+          <h3>¿Titulo 3 de ejemplo?</h3><br>
+          <ul class="lista1">
+            <li>Esta es un ejemplo</li>
+            <li>Esta es un ejemplo de lista</li>
+          </ul>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
