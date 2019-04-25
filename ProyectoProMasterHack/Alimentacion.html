@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Plantilla</title>
+    <link rel="stylesheet" href="ArticStyle.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans|ZCOOL+KuaiLe');
+
+      body{
+        background-image: url(Img/back1.jpg);
+        font-family: sans-serif;
+        font-family: "open sans";
+      }
+
+      #miTitulo{
+        background: #FBFCFC url("Img/Arriba1.jpg") no-repeat fixed;
+        background-size: 100% 95%;
+        background-size: cover;
+        /*color: ; /* usar esta propiedad si es necesario*/
+        /*opacity: 0.5;*/
+      }
+      #miTitulo hr{
+        margin: 0 auto;
+        /*color: ; /* usar esta propiedad si es necesario*/
+      }
+      #otraSeccion li{ /*Mover la lista*/
+        background-color: #17202A;
+        display: block;
+        padding: 5%;
+        font-size: 30px;
+        color: white;
+      }
+      @media screen and (max-width: 500px){
+        #miTitulo{
+          height: 400px;
+          background-size: 100% 70%;
+        }
+      }
+      .card1{
+        background-image: url(Img/Elefante4.jpg);
+        background-size: cover;
+      }
+
+      .card2{
+        background-image: url(Img/ElefanteHD.jpg);
+        background-size: cover;
+      }
+
+      .card3{
+        background-image: url(Img/ElefanteHD.jpg);
+        background-size: cover;
+      }
+
+      .card4{
+        background-image: url(Img/ElefanteHD.jpg);
+        background-size: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 id="banner">EspacioBanner</h1>
+
+    <div id="contenido">
+
+      <nav id="miTitulo">
+        <h1>Alimentación</h1>
+        <hr width="50%">
+        <h3>¿Todos los elefantes son hervivoros?</h3>
+      </nav>
+      <h1 class="apArt">Articulo:</h1>
+      <article id="miArticulo">
+        <section>
+
+          <h1 align="center">Alimentación</h1>
+          <h2 align="center">¿Todos los elefantes son hervivoros?</h2>
+          <p>Posted on: <em class="postedd">24 Abril, 2019</em> </p>
+          <hr>
+          <p>Todos los elefantes son herbívoros, lo que significa que consumen
+            sólo vida vegetal, la consumirán dondequiera que vayan. Parte de la
+            razón por la que han sido capaces de sobrevivir y evolucionar durante
+            millones de años se debe a su inteligencia, lo que les falta en las
+            habilidades básicas de supervivencia lo compensan con la creatividad,
+            de hecho, puede ser fascinante ver elefantes alimentándose en su entorno
+            natural.
+          </p>
+          <img src="Img/elefantelodo.jpg" alt="..." width="50%">
+          <p>Por ejemplo, si el alimento que ellos quieren está demasiado alto,
+            envuelven la trompa alrededor del tronco y lo agitan rápidamente,
+            este proceso generalmente les brinda un montón de alimento cayendo
+            de los árboles para ellos y sus crías. Si eso no funciona el elefante
+            solo puede tomar todo el árbol o la planta y echarlo a tierra y luego
+            consumirlo. Uno de los mayores problemas que enfrentan en la naturaleza
+            es la falta de alimento disponible. Sus hábitats continúan siendo cada
+            vez más y más pequeños y tienen menos opciones para la alimentación además
+            de la competencia en algunas áreas con otros elefantes por las mismas fuentes
+            de alimento.  <br>
+            Los elefantes pueden pasar hasta 16 horas al día en busca de comida.
+            Ellos no parecen tener prisa por encontrarla, y se toman su tiempo de pastoreo.
+            Una de las razones por las que tiene que consumir tanta comida diaria se debe a
+            sus inmensos cuerpos. Ellos sólo procesan alrededor de 40% de lo que comen.
+          </p><br>
+          <h3>Digestión</h3><br>
+          <p>El proceso de la digestión para el elefante es muy diferente que la
+             de otros animales. Realmente no se entiende por qué sus cuerpos no
+             digieren más de lo que consumen. Tienen que consumir mucha agua, esto
+             se hace a través de la trompa. Pueden consumir hasta 15 litros de agua
+             de una vez aunque en ciertas partes del año es difícil para ellos encontrar
+             esa cantidad de agua. <br>
+             Ellos usan sus colmillos para cavar en el suelo a fin de encontrar
+             los suministros de agua que necesitan, esta agua es utilizada también
+             por otros animales en estado salvaje. Mucha gente siente que los hábitos
+             alimentarios de los elefantes destruyen el medio ambiente a gran escala.
+              Sin embargo, tienden a moverse con la suficiente frecuencia para no agotar
+              en una determinada área toda la vegetación allí existente. Este movimiento,
+               de hecho, permite que más de la misma crezca.
+          </p>
+
+        </section>
+        <nav id="otraSeccion">
+          <h5>Articulos relacionados</h5>
+
+          <div class="wrap">
+            <div class="tarjeta-wrap">
+              <div class="tarjeta">
+                <div class="adelante card1"> <h1>Encabezado</h1> </div>
+                <div class="atras"><p>Taxonomia</p></div>
+              </div>
+            </div>
+
+            <div class="tarjeta-wrap">
+              <div class="tarjeta">
+                <div class="adelante card2"> <h1>Encabezado</h1> </div>
+                <div class="atras"><p>Nombre otro</p></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="wrap">
+            <div class="tarjeta-wrap">
+              <div class="tarjeta">
+                <div class="adelante card3"> <h1>Encabezado</h1> </div>
+                <div class="atras"><p>Taxonomia</p></div>
+              </div>
+            </div>
+
+            <div class="tarjeta-wrap">
+              <div class="tarjeta">
+                <div class="adelante card4"> <h1>Encabezado</h1> </div>
+                <div class="atras"><p>Nombre otro</p></div>
+              </div>
+            </div>
+
+          </div>
+
+        </nav>
+
+      </article>
+    </div>
+
+    <footer>
+
+
+    </footer>
+
+  </body>
+</html>
