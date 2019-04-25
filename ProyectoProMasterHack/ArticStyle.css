@@ -1,13 +1,15 @@
 /*CSS PARA LOS ARTICULOS*/
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|ZCOOL+KuaiLe');
+
 *{
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 body{
   background-color: #FAFAFA;
-  font-family: sans-serif;
 }
 
 #banner{
@@ -27,6 +29,7 @@ body{
 
 #miTitulo h1{
   margin-top: 20%;
+  font-family: 'ZCOOL KuaiLe', cursive;
 }
 
 .apArt{
@@ -37,7 +40,7 @@ body{
 }
 
 #miArticulo{
-  background-color: #FAFAFA; /*#FBFCFC*/
+  /*background-color: #FAFAFA; /*#FBFCFC*/
   width: 90%;
   margin: 0 auto;
   display: flex;
@@ -45,9 +48,15 @@ body{
 
 #miArticulo section{
   box-sizing: border-box; /*Se mueve adentro del contenedor padding*/
-  background-color: #FAFAFA;
-  width: 80%;
-  padding: 5%;
+  background-color: #ECECEC;
+  width: 70%;
+  padding: 2%;
+  margin: 3%;
+  border-radius: 10px;
+
+  /*-webkit-box-shadow: 0px 0px 14px 3px rgba(236,236,236,1);
+-moz-box-shadow: 0px 0px 14px 3px rgba(236,236,236,1);
+box-shadow: 0px 0px 14px 3px rgba(236,236,236,1);*/
 }
 
 #miArticulo p{
@@ -55,33 +64,83 @@ body{
 }
 
 #otraSeccion{
+  margin-top: 3%;
+  height: 450px;
   text-align: center;
   background-color: #2C3E50;
   color: white;
-  width: 20%;
-}
-/*margin: 0 auto;*/
+  width: 440px;
+  border-radius: 10px;
 
-#otraSeccion ul{
-  list-style: none;
-}
-
-#otraSeccion li{
-  background-color: #17202A;
-  display: block;
-  padding: 5%;
-  font-size: 30px;
-  color: white;
+  /*-webkit-box-shadow: 0px 0px 14px 3px rgba(44,62,80,1);
+-moz-box-shadow: 0px 0px 14px 3px rgba(44,62,80,1);
+box-shadow: 0px 0px 14px 3px rgba(44,62,80,1);*/
 }
 
-#otraSeccion a{
-  text-decoration: none;
+h5{
+  margin: 2%;
 }
 
-#otraSeccion li:hover{
-  background-color: #5DADE2;
-  color: black;
+/*Las imgs*/
+
+.wrap h1{
+  background-color: black;
 }
+
+.wrap{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.tarjeta-wrap{
+  -webkit-perspective: 800; /*Hace un pequeño efecto de mas grande al voltear*/
+  perspective: 800;
+}
+
+.tarjeta{
+  width: 182px;
+  height: 200px;
+  background: orange;
+  position: relative;
+  transform-style: preserve-3d; /*Se muestra atras*/
+  transition: .7s ease; /*Animacion dura 7s y tiene duracion lineal ease*/
+}
+
+.adelante, .atras{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden; /*Si un elemento rota no se va mostrar la parte trasera*/
+  backface-visibility: hidden;
+}
+
+.adelante{
+  width: 100%;
+}
+
+.atras{
+  transform: rotateY(180deg);
+
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: #fff;
+    font-family: "open sans";
+}
+
+.tarjeta-wrap:hover .tarjeta{
+  transform: rotateY(180deg);
+
+}
+
+/*Fin las imgs*/
 
 .lista1{
   margin-left: 5%;
@@ -104,7 +163,6 @@ body{
 }
 
 #miArticulo section hr{
-  display: block;
   height: 1px;
   width: 25%;
   border: 0;
@@ -139,6 +197,10 @@ body{
   #otraSeccion{
     margin: auto;
     width: 100%;
+    margin-left: 3%;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-bottom: 15px;
   }
 
   #miTitulo h1{

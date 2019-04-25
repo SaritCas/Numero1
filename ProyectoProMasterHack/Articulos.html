@@ -5,6 +5,14 @@
     <title>Plantilla</title>
     <link rel="stylesheet" href="ArticStyle.css">
     <style>
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans|ZCOOL+KuaiLe');
+
+      body{
+        background-image: url(Img/back1.jpg);
+        font-family: sans-serif;
+        font-family: "open sans";
+      }
+
       #miTitulo{
         background: #FBFCFC url("Img/Elefante4.jpg") no-repeat fixed;
         background-size: 100% 95%;
@@ -27,8 +35,25 @@
           height: 400px;
           background-size: 100% 70%;
         }
+      }
+      .card1{
+        background-image: url(Img/Elefante4.jpg);
+        background-size: cover;
+      }
 
+      .card2{
+        background-image: url(Img/ElefanteHD.jpg);
+        background-size: cover;
+      }
 
+      .card3{
+        background-image: url(Img/ElefanteHD.jpg);
+        background-size: cover;
+      }
+
+      .card4{
+        background-image: url(Img/ElefanteHD.jpg);
+        background-size: cover;
       }
     </style>
   </head>
@@ -84,13 +109,44 @@
 
         </section>
         <nav id="otraSeccion">
-          <h1>MAS SITIOS INTERESANTES</h1>
-          <ul>
-            <a href="#"><li>Taxonomia</li></a>
-            <a href="#"><li>Hola</li></a>
-            <a href="#"><li>Hola</li></a>
-          </ul>
+          <h5>Articulos relacionados</h5>
+
+          <div class="wrap">
+            <div class="tarjeta-wrap">
+              <div class="tarjeta">
+                <div class="adelante card1"> <h1>Encabezado</h1> </div>
+                <div class="atras"><p>Taxonomia</p></div>
+              </div>
+            </div>
+
+            <div class="tarjeta-wrap">
+              <div class="tarjeta">
+                <div class="adelante card2"> <h1>Encabezado</h1> </div>
+                <div class="atras"><p>Nombre otro</p></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="wrap">
+            <div class="tarjeta-wrap">
+              <div class="tarjeta">
+                <div class="adelante card3"> <h1>Encabezado</h1> </div>
+                <div class="atras"><p>Taxonomia</p></div>
+              </div>
+            </div>
+
+            <div class="tarjeta-wrap">
+              <div class="tarjeta">
+                <div class="adelante card4"> <h1>Encabezado</h1> </div>
+                <div class="atras"><p>Nombre otro</p></div>
+              </div>
+            </div>
+
+          </div>
+
         </nav>
+
       </article>
     </div>
 
