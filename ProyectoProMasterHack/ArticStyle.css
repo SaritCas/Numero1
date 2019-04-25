@@ -49,6 +49,7 @@ body{
 #miArticulo section{
   box-sizing: border-box; /*Se mueve adentro del contenedor padding*/
   background-color: #ECECEC;
+  /*background: rgba(236, 236, 236, 0.5);*/
   width: 70%;
   padding: 2%;
   margin: 3%;
@@ -192,12 +193,13 @@ h5{
 
   #miArticulo section{
     width: 100%;
+    margin-left: 0%;
   }
 
   #otraSeccion{
     margin: auto;
     width: 100%;
-    margin-left: 3%;
+    margin-left: 0%;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     margin-bottom: 15px;

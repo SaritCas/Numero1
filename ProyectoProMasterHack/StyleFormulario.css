@@ -24,6 +24,10 @@ form{
   border-radius: 7px;
 }
 
+.forms{
+  display: flex;
+}
+
 h2{
   color: white;
   text-align: center;
@@ -56,6 +60,49 @@ textarea{
 
 #boton:hover{
   cursor: pointer;
+}
+
+.losComentarios{
+  box-sizing: border-box;
+  margin: auto;
+  margin-top: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  width: 85%;
+  border-radius: 7px;
+  padding: 1%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Homemade+Apple');
+
+.unComentario{
+  background-color: #FAFAFA;
+  margin-top: 20px;
+  box-sizing: border-box;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+.unComentario h4{
+  margin-top: 10px;
+  font-family: 'Homemade Apple', cursive;
+  font-size: 18px;
+}
+
+.unComentario p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+.cTitulo{
+  display: flex;
+}
+
+.cTitulo img{
+  /*width: 5vw;
+  height: 5vh;*/
+  width: 75px;
+  height: 50px;
+  margin-left: 20px;
 }
 
 
