@@ -1,3 +1,7 @@
+<?php
+include("conexion.php");
+ ?>
+
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
@@ -21,20 +25,22 @@
           <input type="button" value="Enviar" id="boton">
         </form>
       -->
-        <form class="" action="" method="post">
+        <form class="" action="enviar.php" method="post">
           <h2>Comentar</h2>
           <input type="text" name="NombreC" placeholder="Nombre" required>
           <input type="text" name="correoC" placeholder="Correo" required>
           <textarea name="comentario" placeholder="Comentario" required></textarea>
-          <input type="button" value="Comentar" id="boton">
+          <input type="submit" value="Comentar" id="boton">
         </form>
       </div>
+
 
       <section class="losComentarios">
         <h2>Comentarios:</h2>
 
         <?php
-          $sql = "SELECT * FROM `mensajes`"; //Guarda el código sql
+
+          $sql = "SELECT * FROM ` mensajes`"; //Guarda el código sql
           $resultado = mysqli_query($con, $sql); //Ejecuta consulta
           while ($mostrar = mysqli_fetch_array($resultado)){
           ?>
