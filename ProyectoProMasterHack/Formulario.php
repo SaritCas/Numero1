@@ -32,27 +32,22 @@
 
       <section class="losComentarios">
         <h2>Comentarios:</h2>
-        <aside class="unComentario">
-          <div class="cTitulo">
-            <h4>Monserrat De Salas</h4>
-            <img src="Img/Flechas.png" alt="...">
-          </div>
-          <p>Mi comentario de esta pagina es muy buena xdxdxd, me gusto mucho esta pagina bai.</p>
-        </aside>
-        <aside class="unComentario">
-          <div class="cTitulo">
-            <h4>Daniel De Castillo</h4>
-            <img src="Img/Flechas.png" alt="...">
-          </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-            in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.</p>
-        </aside>
 
+        <?php
+          $sql = "SELECT * FROM `mensajes`"; //Guarda el código sql
+          $resultado = mysqli_query($con, $sql); //Ejecuta consulta
+          while ($mostrar = mysqli_fetch_array($resultado)){
+          ?>
+        <aside class="unComentario">
+          <div class="cTitulo">
+            <h4><?php echo $mostrar['nombre'] ?></h4>
+            <img src="Img/Flechas.png" alt="...">
+          </div>
+          <p><?php echo $mostrar['comentario'] ?></p>
+        </aside>
+        <?php
+          }
+        ?>
       </section>
     </div>
 
