@@ -15,6 +15,7 @@
   margin: 10px;/*para que las tarjetas tengan una separación*/
   -webkit-perspective: 800;/*para chrome*/
   perspective: 800;/*se ve mejor la animacion*/
+  display:flex;
 }
 
 .tarjeta{
