@@ -6,7 +6,7 @@
 }
 
 body{
-  background-image: url(Img/back1.jpg);
+  background-image: url(Img2/back2.jpg);
   /*background-size: 100vw 100vh;/*(100vw es el 100% del ancho de la ventana)*/
   background-attachment: fixed; /*No se mueve la imagen de fondo*/
   /*Margin 0*/
