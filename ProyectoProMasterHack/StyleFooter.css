@@ -115,6 +115,10 @@ footer{
     max-width: 100%;
   }
 
+  .information{
+    font-size: 20px;
+  }
+
   .colum2, .colum3{
     margin-top: 40px;
     margin: auto;
