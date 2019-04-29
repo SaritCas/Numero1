@@ -13,7 +13,8 @@
 
 .tarjeta-wrap{
   margin: 10px;/*para que las tarjetas tengan una separación*/
-
+  -webkit-perspective: 800;/*para chrome*/
+  perspective: 800;/*se ve mejor la animacion*/
 }
 
 .tarjeta{
@@ -26,6 +27,12 @@
   /*para hacer que solo se muestre la parte delantera y no la parte trasera cuando rote*/
   /*-webkit-backface-visibility: hidden;/*webkit para que se vea en chrome porque aveces no se ve*/
   /*backface-visibility: hidden;*/
+  transform-style: preserve-3d;/*hace que la parte delantera vaya hacia atras y biseversa*/
+  transition: .7s ease;/*animacio(duracion)*/
+
+  -webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+  -moz-bx-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+  box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
 }
 .adentante, .atras{
   width: 100%;
@@ -36,10 +43,40 @@
 
   /*para hacer que solo se muestre la parte delantera y no la parte trasera cuando rote*/
   -webkit-backface-visibility: hidden;/*webkit para que se vea en chrome porque aveces no se ve*/
-  backface-visibility: hidden;
+  backface-visibility: hidden;*/
+}
+.adelante{
+  width: 100%;
+}
+.atras{
+  transform: rotateY(180deg);/*para que rote (grados)*/
+
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: #fff;
+  font-family: "open sans";
 }
 
-.atras{
-  transform: rotateY(180deg);
-
+.tarjeta-wrap:hover .tarjeta{
+    transform: rotateY(180deg);/*para que rote (grados)*/
+}
+.card1{
+  background-image: url(imgin/rosita.jpg);
+  background-size: cover;
+}
+.card2{
+  background-image: url(imgin/columna.jpg);
+  background-size: cover;
+}
+.card3{
+  background-image: url(imgin/cel.jpg);
+  background-size: cover;
+}
+.card4{
+  background-image: url(imgin/mejores.jpg);
+  background-size: cover;
 }
