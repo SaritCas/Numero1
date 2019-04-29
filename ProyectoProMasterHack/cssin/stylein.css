@@ -84,9 +84,9 @@
   background-image: url(..imgin/mejores.jpg);
   background-size: cover;
 }
-.contenedor{
+/*.contenedor{
   display:flex;
-}
+}*/
 
 @media(min-width:1024px){
     .contenedor{
