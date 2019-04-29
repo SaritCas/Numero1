@@ -13,7 +13,8 @@
 
 .tarjeta-wrap{
   margin: 10px;/*para que las tarjetas tengan una separación*/
-
+  -webkit-perspective: 100;
+  perspective: 100;/*se ve mejor la animacion*/
 }
 
 .tarjeta{
