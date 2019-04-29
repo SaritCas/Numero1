@@ -3,8 +3,266 @@
   <head>
     <meta charset="utf-8">
     <title>Huawei</title>
-  </head>
-  <body>
+  <<link rel="stylesheet" href="ArticStyle.css">
+  <link rel="stylesheet" href="StyleFooter.css">
 
-  </body>
+
+  <link rel="stylesheet" href="Animaciones.js">
+  <link rel="stylesheet" href="css/fontello.css">
+   <link rel="stylesheet" href="css/in.css">
+   <link rel="stylesheet" href="css/menu.css">
+   <link rel="stylesheet" href="css/banner.css">
+   <link rel="stylesheet" href="css/blog.css">
+  <link rel="stylesheet" href="css/info.css">
+
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans|ZCOOL+KuaiLe');
+
+    body{
+      background-image: url(Img2/back2.jpg);
+      background-size: cover;
+      font-family: sans-serif;
+      font-family: "open sans";
+    }
+
+    #miTitulo{
+      background: #FBFCFC url("img2/P30Pro2.jpg") no-repeat fixed;
+      background-size: 100% 100%;
+      /*color: ; /* usar esta propiedad si es necesario*/
+      /*opacity: 0.5;*/
+    }
+    #miTitulo hr{
+      margin: 0 auto;
+      /*color: ; /* usar esta propiedad si es necesario*/
+    }
+    #otraSeccion li{ /*Mover la lista*/
+      background-color: #17202A;
+      display: block;
+      padding: 5%;
+      font-size: 30px;
+      color: white;
+    }
+    @media screen and (max-width: 500px){
+      #miTitulo{
+        height: 400px;
+        background-size: 100% 70%;
+      }
+    }
+    .card1{
+      background-image: url(img2/p30c.jpg);
+      background-size: cover;
+    }
+
+    .card2{
+      background-image: url(img2/p30c2.jpg);
+      background-size: cover;
+    }
+
+    .card3{
+      background-image: url(img2/p30c3.jpg);
+      background-size: cover;
+    }
+
+    .card4{
+      background-image: url(img2/p30c4.jpg);
+      background-size: cover;
+    }
+    header{
+      background-image: url(Img2/Banner1.jpg);
+    }
+    header h1{margin-top: 5px;}
+    header a:hover{
+      color: #373737;
+    }
+    @media screen and (max-width: 400px){
+      .contenedor h1{
+        margin-top: 10px;
+        font-size: 20px;
+      }
+    }
+    @media screen and (min-width: 1025px){
+      header .menu{
+        background: none;
+      }
+    }
+    #miTitulo h1{
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+    <header>
+      <div class="contenedor">
+        <!--<h1 class="icon-cel">MobilZone</h1>-->
+        <img src="Img2/Logo1.png" >
+        <h1>MovilZone</h1>
+        <input type="checkbox" id="menu-bar">
+        <label class="icon-menu" for="menu-bar"></label>
+        <nav class="menu">
+          <a href="index.html">Inicio</a>
+          <a href="indice.html">Indice</a>
+          <a href="Formulario.php">Opiniones</a>
+          <a href="">Referencias</a>
+        </nav>
+    </div>
+  </header>
+
+  <div id="contenido">
+
+    <nav id="miTitulo">
+      <h1>HABLEMOS SOBRE EL NUEVO P30Pro</h1>
+      <hr width="50%">
+      <h3>Descripcion</h3>
+    </nav>
+    <h1 class="apArt" style="color: white;">Articulo:</h1>
+    <article id="miArticulo">
+      <section>
+
+        <h1 align="center">Titulo del article</h1> <br> <br>
+        <h2 align="center">subtitulo chido</h2>
+        <p>Posted on: <em class="postedd">28 Marzo, 2019</em> </p>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <img src="img2/mano.jpg" alt="..." width="50%">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p><br>
+        <h3>¿Titulo 3 de ejemplo?</h3><br>
+        <ul class="lista1">
+          <li>Esta es un ejemplo</li>
+          <li>Esta es un ejemplo de lista</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+      </section>
+      <nav id="otraSeccion">
+        <h5>Articulos relacionados</h5>
+
+        <div class="wrap">
+          <div class="tarjeta-wrap">
+            <div class="tarjeta">
+              <div class="adelante card1"> <h1>Encabezado</h1> </div>
+              <div class="atras"><p>Taxonomia</p></div>
+            </div>
+          </div>
+
+          <div class="tarjeta-wrap">
+            <div class="tarjeta">
+              <div class="adelante card2"> <h1>Encabezado</h1> </div>
+              <div class="atras"><p>Nombre otro</p></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="wrap">
+          <div class="tarjeta-wrap">
+            <div class="tarjeta">
+              <div class="adelante card3"> <h1>Encabezado</h1> </div>
+              <div class="atras"><p>Taxonomia</p></div>
+            </div>
+          </div>
+
+          <div class="tarjeta-wrap">
+            <div class="tarjeta">
+              <div class="adelante card4"> <h1>Encabezado</h1> </div>
+              <div class="atras"><p>Nombre otro</p></div>
+            </div>
+          </div>
+
+        </div>
+
+      </nav>
+
+    </article>
+  </div>
+
+  <footer>
+    <div class="container-footer-all">
+
+      <div class="container-body">
+        <div class="colum1">
+          <h1>Más información de la compañia</h1> <br>
+          <p>Está pagina es para aumentar la conciencia ambiental
+            de la sociedad. <br>
+            Somos conscientes de la importancia de cuidar nuestra salud y
+            también debemos serlo de la necesidad de proteger nuestro entorno.
+            La conciencia ambiental es un aprendizaje necesario, con
+            independencia de nuestra edad o de nuestros conocimientos.</p>
+        </div>
+
+        <div class="colum2">
+          <h1> <center> Más de nosotros </center></h1> <br> <br>
+          <a href="Formulario.html">
+            <div class="row">
+              <img src="https://img.icons8.com/dusk/64/000000/comments.png" alt="...">
+              <p>¡Clic aquí!</p>
+            </div>
+          </a>
+          <a href="index.html">
+            <div class="row">
+              <img src="https://img.icons8.com/office/40/000000/home.png" alt="...">
+              <p>Inicio</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="colum3">
+          <h1>Información de contacto</h1>
+          <br>
+          <div class="row2">
+            <img src="https://img.icons8.com/dusk/64/000000/near-me.png" alt="...">
+            <label for="">Universidad 2, La Loma Xicohtencatl, 90070 Tlaxcala de
+              Xicohténcatl, Tlax.</label>
+          </div>
+          <div class="row2">
+            <img src="https://img.icons8.com/nolan/64/000000/phone-office.png" alt="...">
+            <label for="">+52-246-139-9547</label>
+          </div>
+          <div class="row2">
+            <img src="https://img.icons8.com/dusk/64/000000/email.png" alt="...">
+            <label>monse2002sarit@gmail.com, danielhachac@gmail.com</label>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container-footer">
+      <div class="footer">
+        <div class="copyright">
+          © 2019 Todos los derechos reservados | <a href="index.html">MovilZone</a>
+        </div>
+
+        <div class="information">
+          <a href="#">Información de la compañia</a> |
+          <a href="https://policies.google.com/?hl=es">Privación y Politica</a> |
+          <a href="https://policies.google.com/terms?hl=es">Terminos y Condiciones
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
 </html>
