@@ -69,19 +69,19 @@
     transform: rotateY(180deg);/*para que rote (grados)*/
 }
 .card1{
-  background-image: url(imgin/rosita.jpg);
+  background-image: url(..imgin/rosita.jpg);
   background-size: cover;
 }
 .card2{
-  background-image: url(imgin/columna.jpg);
+  background-image: url(..imgin/columna.jpg);
   background-size: cover;
 }
 .card3{
-  background-image: url(imgin/cel.jpg);
+  background-image: url(..imgin/cel.jpg);
   background-size: cover;
 }
 .card4{
-  background-image: url(imgin/mejores.jpg);
+  background-image: url(..imgin/mejores.jpg);
   background-size: cover;
 }
 .contenedor{
