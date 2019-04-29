@@ -9,6 +9,8 @@
   margin: 50px auto;/*50px arriba y abajo y centrado*/
   display: flex;/*para que las tarjetas queden a lado*/
   justify-content: center;
+  display:flex;
+  flex-wrap: wrap;
 }
 
 .tarjeta-wrap{
@@ -16,6 +18,7 @@
   -webkit-perspective: 800;/*para chrome*/
   perspective: 800;/*se ve mejor la animacion*/
   display:flex;
+  flex-wrap: wrap;
 }
 
 .tarjeta{
@@ -80,4 +83,7 @@
 .card4{
   background-image: url(imgin/mejores.jpg);
   background-size: cover;
+}
+.contenedor{
+  display:flex;
 }
