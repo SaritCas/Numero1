@@ -10,11 +10,56 @@ include("conexion.php");
     <link rel="stylesheet" href="StyleFormulario.css">
     <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="StyleFooter.css">
+
+    <link rel="stylesheet" href="Animaciones.js">
+    <link rel="stylesheet" href="css/fontello.css">
+     <link rel="stylesheet" href="css/in.css">
+     <link rel="stylesheet" href="css/menu.css">
+     <link rel="stylesheet" href="css/banner.css">
+     <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/info.css">
+
+    <style media="screen">
+    body{background-size: cover;}
+    header{
+      background-image: url(Img2/Banner1.jpg);
+    }
+    header h1{margin-top: 5px;}
+    header a:hover{
+      color: #373737;
+    }
+    @media screen and (max-width: 400px){
+      .contenedor h1{
+        margin-top: 10px;
+        font-size: 20px;
+      }
+    }
+    @media screen and (min-width: 1025px){
+      header .menu{
+        background: none;
+      }
+    }
+    </style>
   </head>
   <body>
 
     <div class="contenido">
-
+      <header>
+        <div class="contenedor">
+          <!--<h1 class="icon-cel">MobilZone</h1>-->
+          <img src="Img2/Logo1.png" >
+          <h1>MovilZone</h1>
+          <input type="checkbox" id="menu-bar">
+          <label class="icon-menu" for="menu-bar"></label>
+          <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="indice.html">Indice</a>
+            <a href="Formulario.php">Opiniones</a>
+            <a href="">Referencias</a>
+          </nav>
+        </div>
+      </header>
+      <br><br>
       <!--<div class="forms">
         <form class="" action="" method="post">
           <h2>Contacto</h2>
