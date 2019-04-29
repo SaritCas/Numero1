@@ -21,6 +21,11 @@
   height: 350px;
   background:#24C7BA;
   position: relative;/*para que se unan el contenido en las tarjetas*/
+  transform: rotateY(180deg);/*para que rote (grados)*/
+
+  /*para hacer que solo se muestre la parte delantera y no la parte trasera cuando rote*/
+  -webkit-backface-visibility: hidden;/*webkit para que se vea en chrome porque aveces no se ve*/
+  backface-visibility: hidden;
 }
 .adentante, .atras{
   width: 100%;
