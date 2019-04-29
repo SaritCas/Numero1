@@ -87,3 +87,17 @@
 .contenedor{
   display:flex;
 }
+
+@media(min-width:1024px){
+    .contenedor{
+        width: 1000px;
+    }
+}
+@media(min-width:768px){/* iconos se vayan a los extremos a partir de tablet*/
+    .wrap{
+        width: auto;
+    }
+    footer .contenedor{
+        justify-content: space-between;
+    }
+}
