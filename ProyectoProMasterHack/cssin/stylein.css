@@ -13,7 +13,7 @@
 
 .tarjeta-wrap{
   margin: 10px;/*para que las tarjetas tengan una separación*/
-  -webkit-perspective: 800;
+  -webkit-perspective: 800;/*para chrome*/
   perspective: 800;/*se ve mejor la animacion*/
 }
 
@@ -45,8 +45,18 @@
 .atras{
   transform: rotateY(180deg);/*para que rote (grados)*/
 
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: #fff;
+  font-family: "open sans";
 }
 
 .tarjeta-wrap:hover .tarjeta{
     transform: rotateY(180deg);/*para que rote (grados)*/
+
+
 }
