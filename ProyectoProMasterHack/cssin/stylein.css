@@ -26,6 +26,7 @@
   /*para hacer que solo se muestre la parte delantera y no la parte trasera cuando rote*/
   /*-webkit-backface-visibility: hidden;/*webkit para que se vea en chrome porque aveces no se ve*/
   /*backface-visibility: hidden;*/
+  transform-style: preserve-3d;/*hace que la parte delantera vaya hacia atras y biseversa*/
 }
 .adentante, .atras{
   width: 100%;
@@ -36,10 +37,14 @@
 
   /*para hacer que solo se muestre la parte delantera y no la parte trasera cuando rote*/
   -webkit-backface-visibility: hidden;/*webkit para que se vea en chrome porque aveces no se ve*/
-  backface-visibility: hidden;
+  backface-visibility: hidden;*/
 }
 
 .atras{
-  transform: rotateY(180deg);
+  transform: rotateY(180deg);/*para que rote (grados)*/
 
+}
+
+.tarjeta-wrap:hover .tarjeta{
+    transform: rotateY(180deg);/*para que rote (grados)*/
 }
