@@ -4,8 +4,65 @@
 <meta charset="utf-8">
 <title>Indice</title>
  <link rel="stylesheet" href="cssin/stylein.css">
+ <style media="screen">
+   #titNuev{
+     background-color: #101010;
+     width: 100%;
+     color: white;
+     margin: 0;
+     text-align: center;
+     background-image: url(Img2/Banner2.png);
+   }
+   header{
+     background-image: url(Img2/Banner1.jpg);
+   }
+   header a:hover{
+     color: #373737;
+   }
+   #bienvenidos, .contenedor{
+     /*background: none;*/
+     width: 80%;
+     margin: auto;
+   }
+   .contenedor a{transition: 1s;}
+   .contenedor a:hover{
+     background-color: #F5F5F5;
+   }
+   @media screen and (min-width: 1025px){
+     header .menu{
+       background: none;
+     }
+   }
+   @media screen and (max-width: 490px){
+     .contenedor h1{
+       margin-top: 8px;
+       font-size: 30px;
+     }
+   }
+   @media screen and (max-width: 400px){
+     .contenedor h1{
+       margin-top: 10px;
+       font-size: 20px;
+     }
+   }
+ </style>
 </head>
 <body>
+  <header>
+    <div class="contenedor">
+      <!--<h1 class="icon-cel">MobilZone</h1>-->
+      <img src="Img2/Logo1.png" >
+      <h1>MovilZone</h1>
+      <input type="checkbox" id="menu-bar">
+      <label class="icon-menu" for="menu-bar"></label>
+      <nav class="menu">
+        <a href="">Inicio</a>
+        <a href="">Indice</a>
+        <a href="Formulario.php">Opiniones</a>
+        <a href="">Referencias</a>
+      </nav>
+    </div>
+  </header>
   <div class="wrap"><!--todo el cotenido-->
 
     <div class="tarjeta-wrap">
