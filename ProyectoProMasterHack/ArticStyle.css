@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|ZCOOL+KuaiLe');
 
+
+
 *{
   margin: 0px;
   padding: 0px;
@@ -12,27 +14,21 @@ body{
   background-color: #FAFAFA;
 }
 
-#banner{
-  background-color: #4CAF50;
-  width: 100%;
-  text-align: center;
-  position: fixed;
-}
-
 #miTitulo{
   color: white;
     height: 600px;
-    display: table;
     width: 100%;
     text-align: center;
-    
+
     background-size: 100% 95%;
     background-size: cover;
 }
 
 #miTitulo h1{
+  text-align: center;
   margin-top: 20%;
-  font-family: 'ZCOOL KuaiLe', cursive;
+  /*font-family: 'ZCOOL KuaiLe', cursive;*/
+  margin-left: 40%;
 }
 
 .apArt{

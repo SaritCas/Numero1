@@ -5,11 +5,22 @@
     <title>Plantilla</title>
     <link rel="stylesheet" href="ArticStyle.css">
     <link rel="stylesheet" href="StyleFooter.css">
+
+
+    <link rel="stylesheet" href="Animaciones.js">
+    <link rel="stylesheet" href="css/fontello.css">
+     <link rel="stylesheet" href="css/in.css">
+     <link rel="stylesheet" href="css/menu.css">
+     <link rel="stylesheet" href="css/banner.css">
+     <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/info.css">
+
     <style>
     @import url('https://fonts.googleapis.com/css?family=Open+Sans|ZCOOL+KuaiLe');
 
       body{
-        background-image: url(Img/back1.jpg);
+        background-image: url(Img2/back2.jpg);
+        background-size: cover;
         font-family: sans-serif;
         font-family: "open sans";
       }
@@ -56,11 +67,46 @@
         background-image: url(Img/ElefanteHD.jpg);
         background-size: cover;
       }
+      header{
+        background-image: url(Img2/Banner1.jpg);
+      }
+      header h1{margin-top: 5px;}
+      header a:hover{
+        color: #373737;
+      }
+      @media screen and (max-width: 400px){
+        .contenedor h1{
+          margin-top: 10px;
+          font-size: 20px;
+        }
+      }
+      @media screen and (min-width: 1025px){
+        header .menu{
+          background: none;
+        }
+      }
+      #miTitulo h1{
+        text-align: center;
+      }
     </style>
   </head>
 
   <body>
-    <h1 id="banner">EspacioBanner</h1>
+      <header>
+        <div class="contenedor">
+          <!--<h1 class="icon-cel">MobilZone</h1>-->
+          <img src="Img2/Logo1.png" >
+          <h1>MovilZone</h1>
+          <input type="checkbox" id="menu-bar">
+          <label class="icon-menu" for="menu-bar"></label>
+          <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="indice.html">Indice</a>
+            <a href="Formulario.php">Opiniones</a>
+            <a href="">Referencias</a>
+          </nav>
+      </div>
+    </header>
 
     <div id="contenido">
 
@@ -69,11 +115,11 @@
         <hr width="50%">
         <h3>Subtitulo</h3>
       </nav>
-      <h1 class="apArt">Articulo:</h1>
+      <h1 class="apArt" style="color: white;">Articulo:</h1>
       <article id="miArticulo">
         <section>
 
-          <h1 align="center">Titulo del article</h1>
+          <h1 align="center">Titulo del article</h1> <br> <br>
           <h2 align="center">subtitulo chido</h2>
           <p>Posted on: <em class="postedd">28 Marzo, 2019</em> </p>
           <hr>
@@ -156,7 +202,7 @@
 
         <div class="container-body">
           <div class="colum1">
-            <h1>Más información de la compañia</h1>
+            <h1>Más información de la compañia</h1> <br>
             <p>Está pagina es para aumentar la conciencia ambiental
               de la sociedad. <br>
               Somos conscientes de la importancia de cuidar nuestra salud y
@@ -166,7 +212,7 @@
           </div>
 
           <div class="colum2">
-            <h1> <center> Más de nosotros </center></h1>
+            <h1> <center> Más de nosotros </center></h1> <br> <br>
             <a href="Formulario.html">
               <div class="row">
                 <img src="https://img.icons8.com/dusk/64/000000/comments.png" alt="...">
@@ -182,8 +228,8 @@
           </div>
 
           <div class="colum3">
-            <h1>información de contacto</h1>
-
+            <h1>Información de contacto</h1>
+            <br>
             <div class="row2">
               <img src="https://img.icons8.com/dusk/64/000000/near-me.png" alt="...">
               <label for="">Universidad 2, La Loma Xicohtencatl, 90070 Tlaxcala de
@@ -195,7 +241,7 @@
             </div>
             <div class="row2">
               <img src="https://img.icons8.com/dusk/64/000000/email.png" alt="...">
-              <a href="danielhachac@gmail.com"><p>addfhasf@gmail.com</p></a>
+              <label>monse2002sarit@gmail.com, danielhachac@gmail.com</label>
             </div>
           </div>
         </div>
@@ -205,7 +251,7 @@
       <div class="container-footer">
         <div class="footer">
           <div class="copyright">
-            © 2019 Todos los derechos reservados | <a href="index.html">Elephant</a>
+            © 2019 Todos los derechos reservados | <a href="index.html">MovilZone</a>
           </div>
 
           <div class="information">
