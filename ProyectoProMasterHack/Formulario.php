@@ -18,7 +18,11 @@ include("conexion.php");
      <link rel="stylesheet" href="css/banner.css">
      <link rel="stylesheet" href="css/blog.css">
     <link rel="stylesheet" href="css/info.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <style media="screen">
     body{background-size: cover;}
     header{
@@ -73,7 +77,7 @@ include("conexion.php");
         <form class="" action="enviar.php" method="post">
           <h2>Comentar</h2>
           <input type="text" name="NombreC" placeholder="Nombre" required>
-          <input type="text" name="correoC" placeholder="Correo" required>
+          <input type="email" name="correoC" placeholder="Correo" required>
           <textarea name="comentario" placeholder="Comentario" required></textarea>
           <input type="submit" value="Comentar" id="boton">
         </form>
@@ -87,18 +91,18 @@ include("conexion.php");
 
           $sql = "SELECT * FROM ` mensajes`"; //Guarda el código sql
           $resultado = mysqli_query($con, $sql); //Ejecuta consulta
-          while ($mostrar = mysqli_fetch_array($resultado)){
+          while ($mostrar = mysqli_fetch_array($resultado)){ //Cada que se ejecute el while crea un cuadrito con clase .unComentario
           ?>
-        <aside class="unComentario">
-          <div class="cTitulo">
-            <h4><?php echo $mostrar['nombre'] ?></h4>
-            <img src="Img/Flechas.png" alt="...">
-          </div>
-          <p><?php echo $mostrar['comentario'] ?></p>
-        </aside>
-        <?php
-          }
-        ?>
+          <aside class="unComentario">
+            <div class="cTitulo">
+              <h4><?php echo $mostrar['nombre']?></h4><!--echo sirve para -->
+              <img src="Img/Flechas.png" alt="...">
+            </div>
+            <p><?php echo $mostrar['comentario'] ?></p>
+          </aside>
+          <?php
+            }
+          ?>
       </section>
     </div>
 
